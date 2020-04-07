@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="int-9w-7bk">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="UXM-hQ-VcA">
+            <objects>
+                <viewController id="Ygq-zz-vam" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dY8-vg-1Nn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Извините, данный раздел находится в разработке" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d58-wl-Ljq">
+                                <rect key="frame" x="77" y="418" width="260" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="CGT-JL-k71"/>
+                                    <constraint firstAttribute="width" constant="260" id="mRF-wa-48j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" red="0.31480667000000001" green="0.54384368660000004" blue="0.80130952600000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="d58-wl-Ljq" firstAttribute="centerX" secondItem="U97-zf-gtB" secondAttribute="centerX" id="sHm-K4-4UA"/>
+                            <constraint firstItem="d58-wl-Ljq" firstAttribute="centerY" secondItem="U97-zf-gtB" secondAttribute="centerY" constant="-2.5" id="w0I-Id-SKE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U97-zf-gtB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U7A-Su-0MK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAb-VR-Kkr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4734.375" y="-1742.9577464788733"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pGV-j2-XQs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="int-9w-7bk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="dzs-LP-kaO"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cwZ-jG-Bcl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.28804424410000001" green="0.50090664630000004" blue="0.74589657779999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ygq-zz-vam" kind="relationship" relationship="rootViewController" id="zAR-5q-H9x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jg9-n0-pqh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3983" y="-1742"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+    </resources>
+</document>

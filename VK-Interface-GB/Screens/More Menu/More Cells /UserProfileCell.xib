@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserProfileCell" rowHeight="72" id="KGk-i7-Jjw" customClass="UserProfileCell" customModule="VK_Interface_GB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVy-Zs-xKs" customClass="RoundImage" customModule="VK_Interface_GB" customModuleProvider="target">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="Rux-tI-0E5">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rux-tI-0E5" firstAttribute="top" secondItem="HVy-Zs-xKs" secondAttribute="top" id="4JO-qw-GvC"/>
+                            <constraint firstAttribute="width" secondItem="HVy-Zs-xKs" secondAttribute="height" multiplier="1:1" id="Bqc-lq-qfI"/>
+                            <constraint firstItem="Rux-tI-0E5" firstAttribute="centerX" secondItem="HVy-Zs-xKs" secondAttribute="centerX" id="a0H-cq-65S"/>
+                            <constraint firstItem="Rux-tI-0E5" firstAttribute="leading" secondItem="HVy-Zs-xKs" secondAttribute="leading" id="r93-fE-os6"/>
+                            <constraint firstItem="Rux-tI-0E5" firstAttribute="centerY" secondItem="HVy-Zs-xKs" secondAttribute="centerY" id="y5V-Lh-wKN"/>
+                            <constraint firstAttribute="width" constant="50" id="zGe-I8-ipx"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="uKi-e4-c21">
+                        <rect key="frame" x="72" y="16" width="146.5" height="38.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Евгений Никитин" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpk-hB-egz">
+                                <rect key="frame" x="0.0" y="0.0" width="146.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Открыть профиль" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pa-g9-cac">
+                                <rect key="frame" x="0.0" y="22.5" width="146.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HVy-Zs-xKs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="6Kh-O5-uKo"/>
+                    <constraint firstItem="uKi-e4-c21" firstAttribute="leading" secondItem="Rux-tI-0E5" secondAttribute="trailing" constant="12" id="SYf-TW-9of"/>
+                    <constraint firstItem="uKi-e4-c21" firstAttribute="centerY" secondItem="HVy-Zs-xKs" secondAttribute="centerY" id="W9c-PH-mO6"/>
+                    <constraint firstItem="HVy-Zs-xKs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dsh-wZ-ofP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user" width="400" height="400"/>
+    </resources>
+</document>

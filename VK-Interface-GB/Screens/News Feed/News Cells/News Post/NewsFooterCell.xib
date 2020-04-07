@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="NewsFooterCell" rowHeight="40" id="KGk-i7-Jjw" customClass="NewsFooterCell" customModule="VK_Interface_GB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="40"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuM-hk-Gnl" userLabel="Bottom Controls">
+                        <rect key="frame" x="20" y="7.5" width="387" height="25"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRk-27-aWH" userLabel="Like Button" customClass="CustomLikeButton" customModule="VK_Interface_GB" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="8KC-Zz-hOJ"/>
+                                    <constraint firstAttribute="height" constant="25" id="gNP-20-ZoA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" red="0.57993603932675974" green="0.57993603932675974" blue="0.57993603932675974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="like">
+                                    <color key="titleColor" red="0.48906119792944158" green="0.48906119792944158" blue="0.48906119792944158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="likeCount">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="likeButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="QMW-ED-mJo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DO-ys-Pjm" customClass="CustomCommentButton" customModule="VK_Interface_GB" customModuleProvider="target">
+                                <rect key="frame" x="60" y="0.0" width="60" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="URq-Cg-wCJ"/>
+                                    <constraint firstAttribute="height" constant="25" id="aql-oV-GMG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" red="0.57993603932675974" green="0.57993603932675974" blue="0.57993603932675974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="comments">
+                                    <color key="titleColor" red="0.48906119792944158" green="0.48906119792944158" blue="0.48906119792944158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="comments:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fEG-S5-ZJs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7P-aG-uD0" customClass="CustomRepostButton" customModule="VK_Interface_GB" customModuleProvider="target">
+                                <rect key="frame" x="120" y="0.0" width="60" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="CSp-rD-Z2F"/>
+                                    <constraint firstAttribute="height" constant="25" id="RP8-OP-kP1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="tintColor" red="0.57993603932675974" green="0.57993603932675974" blue="0.57993603932675974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="2" maxX="0.0" maxY="2"/>
+                                <state key="normal" title="repost">
+                                    <color key="titleColor" red="0.48906119792944158" green="0.48906119792944158" blue="0.48906119792944158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="repost:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="X1k-Vt-ona"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" horizontalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gDr-NU-ksS" userLabel="Needed space">
+                                <rect key="frame" x="180" y="0.0" width="157" height="25"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fdI-RG-W9v" userLabel="View icon">
+                                <rect key="frame" x="337" y="1.5" width="15" height="21.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="EJs-lB-oQ0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hh-dx-qBg">
+                                <rect key="frame" x="352" y="0.0" width="35" height="25"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.57993603932675974" green="0.57993603932675974" blue="0.57993603932675974" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="JE5-K3-z72"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.48906119790000002" green="0.48906119790000002" blue="0.48906119790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="q7P-aG-uD0" firstAttribute="centerY" secondItem="3DO-ys-Pjm" secondAttribute="centerY" id="M6m-eO-Enm"/>
+                            <constraint firstItem="8hh-dx-qBg" firstAttribute="centerY" secondItem="fdI-RG-W9v" secondAttribute="centerY" id="NSR-HA-lQd"/>
+                            <constraint firstItem="fdI-RG-W9v" firstAttribute="centerY" secondItem="q7P-aG-uD0" secondAttribute="centerY" id="Tjh-CC-bdn"/>
+                            <constraint firstItem="3DO-ys-Pjm" firstAttribute="centerY" secondItem="cRk-27-aWH" secondAttribute="centerY" id="ka7-AV-P0R"/>
+                            <constraint firstItem="8hh-dx-qBg" firstAttribute="leading" secondItem="fdI-RG-W9v" secondAttribute="trailing" id="l6o-il-pT7"/>
+                            <constraint firstAttribute="height" constant="25" id="wAl-mj-Ggy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0xW-Lm-ISQ"/>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8H-cD-NM9" userLabel="BottomGrayLine">
+                        <rect key="frame" x="0.0" y="39" width="422" height="1"/>
+                        <color key="backgroundColor" red="0.83519071339999995" green="0.83527368310000005" blue="0.83927577730000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="dEJ-yD-fl9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xuM-hk-Gnl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="JFX-YI-FPq"/>
+                    <constraint firstItem="xuM-hk-Gnl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="LW8-oR-tIq"/>
+                    <constraint firstAttribute="bottom" secondItem="p8H-cD-NM9" secondAttribute="bottom" id="M5c-Pq-NXY"/>
+                    <constraint firstAttribute="trailing" secondItem="xuM-hk-Gnl" secondAttribute="trailing" constant="15" id="Rf7-eX-aOa"/>
+                    <constraint firstAttribute="trailing" secondItem="p8H-cD-NM9" secondAttribute="trailing" id="Uc5-nq-VgD"/>
+                    <constraint firstItem="p8H-cD-NM9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xlC-tc-OpT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomGrayLine" destination="dEJ-yD-fl9" id="SK3-yA-Uc6"/>
+                <outlet property="comments" destination="3DO-ys-Pjm" id="xRQ-RJ-fr1"/>
+                <outlet property="likes" destination="cRk-27-aWH" id="51O-lR-11K"/>
+                <outlet property="repost" destination="q7P-aG-uD0" id="b3C-VS-AyV"/>
+                <outlet property="viewsCounter" destination="8hh-dx-qBg" id="3mz-8b-C0E"/>
+            </connections>
+            <point key="canvasLocation" x="211.59420289855075" y="106.47321428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye" catalog="system" width="64" height="40"/>
+    </resources>
+</document>

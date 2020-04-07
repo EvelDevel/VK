@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AddStoriesCell" id="gTV-IL-0wX" customClass="AddStoriesCell" customModule="VK_Interface_GB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="64" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CM7-fp-bcS" customClass="RoundImage" customModule="VK_Interface_GB" customModuleProvider="target">
+                        <rect key="frame" x="4" y="4" width="56" height="56"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9VZ-cI-QMA">
+                                <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="0nw-Lt-Dcu"/>
+                            <constraint firstItem="9VZ-cI-QMA" firstAttribute="width" secondItem="CM7-fp-bcS" secondAttribute="height" multiplier="1:1" id="3Wp-d7-tMv"/>
+                            <constraint firstAttribute="width" secondItem="CM7-fp-bcS" secondAttribute="height" multiplier="1:1" id="Nmi-6W-9IL"/>
+                            <constraint firstItem="9VZ-cI-QMA" firstAttribute="centerX" secondItem="CM7-fp-bcS" secondAttribute="centerX" id="gZd-Vb-Mtp"/>
+                            <constraint firstItem="9VZ-cI-QMA" firstAttribute="top" secondItem="CM7-fp-bcS" secondAttribute="top" id="jLT-l7-HcY"/>
+                            <constraint firstItem="9VZ-cI-QMA" firstAttribute="width" secondItem="CM7-fp-bcS" secondAttribute="width" id="jzX-Ge-hBI"/>
+                            <constraint firstItem="9VZ-cI-QMA" firstAttribute="centerY" secondItem="CM7-fp-bcS" secondAttribute="centerY" id="rQo-uC-sid"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Koi-WU-VXg" customClass="RoundImageNoAnimation" customModule="VK_Interface_GB" customModuleProvider="target">
+                        <rect key="frame" x="40" y="40" width="20" height="20"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3nv-Y8-iQ7">
+                                <rect key="frame" x="1" y="1.5" width="18" height="17"/>
+                                <color key="tintColor" red="0.28804424410000001" green="0.50090664630000004" blue="0.74589657779999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="4L6-1i-5m3"/>
+                                    <constraint firstAttribute="height" constant="18" id="Bw9-J8-wZa"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3nv-Y8-iQ7" firstAttribute="centerY" secondItem="Koi-WU-VXg" secondAttribute="centerY" id="YJ1-Ej-ci4"/>
+                            <constraint firstItem="3nv-Y8-iQ7" firstAttribute="centerX" secondItem="Koi-WU-VXg" secondAttribute="centerX" id="leC-nv-bgB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uD-45-Hac">
+                        <rect key="frame" x="0.0" y="65" width="64" height="14.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="MRZ-0W-DfW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.28804424410000001" green="0.50090664630000004" blue="0.74589657779999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="4uD-45-Hac" firstAttribute="top" secondItem="CM7-fp-bcS" secondAttribute="bottom" constant="5" id="Eyz-6g-JDb"/>
+                <constraint firstItem="4uD-45-Hac" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FUr-g8-g28"/>
+                <constraint firstItem="Koi-WU-VXg" firstAttribute="trailing" secondItem="CM7-fp-bcS" secondAttribute="trailing" id="OZH-5x-kDR"/>
+                <constraint firstItem="Koi-WU-VXg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="40" id="PAr-QI-1Mq"/>
+                <constraint firstItem="CM7-fp-bcS" firstAttribute="width" secondItem="CM7-fp-bcS" secondAttribute="height" multiplier="1:1" id="X6k-Ue-LJd"/>
+                <constraint firstItem="CM7-fp-bcS" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="tsV-3O-rZh"/>
+                <constraint firstItem="Koi-WU-VXg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="xvY-7b-qZ6"/>
+                <constraint firstItem="Koi-WU-VXg" firstAttribute="bottom" secondItem="CM7-fp-bcS" secondAttribute="bottom" id="y2y-rs-2q8"/>
+                <constraint firstItem="CM7-fp-bcS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="zhc-S3-yK9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="avatar" destination="9VZ-cI-QMA" id="9ay-Pe-TdQ"/>
+                <outlet property="name" destination="4uD-45-Hac" id="218-Wo-M21"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

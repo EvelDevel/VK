@@ -4,10 +4,6 @@
 
 import UIKit
 
-// TODO:
-/// Сворачивание ячейки текста, если текста сильно много
-/// Подгрузка свежих новостей через пул-ту-рефреш
-
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
